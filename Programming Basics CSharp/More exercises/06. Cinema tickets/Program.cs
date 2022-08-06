@@ -42,7 +42,7 @@ namespace _01_
                 }
                 //  => когато излезем от вътрешния цикъл:
                 //     => Изчисляваме и отпечатваме какъв % от залата е запълнена (колко от общия брой билети са закупени)
-                double procent = tickets*100/freeSeats;
+                double procent = tickets*100.0/freeSeats;
                 Console.WriteLine($"{input} - {procent:f2}% full.");
 
                 input = Console.ReadLine();
@@ -50,9 +50,9 @@ namespace _01_
 
             int totalTickets = student + standart + kid;
             Console.WriteLine($"Total tickets: {totalTickets}");
-            Console.WriteLine($"{student / totalTickets * 100}% student tickets.");
-            Console.WriteLine($"{standart / totalTickets * 100}% student tickets.");
-            Console.WriteLine($"{kid / totalTickets * 100}% student tickets.");
+            Console.WriteLine($"{student*100.0/ totalTickets:f2}% student tickets.");
+            Console.WriteLine($"{standart*100.0 / totalTickets:f2}% standard tickets.");
+            Console.WriteLine($"{kid*100.0 / totalTickets:f2}% kids tickets.");
 
         }
     }
