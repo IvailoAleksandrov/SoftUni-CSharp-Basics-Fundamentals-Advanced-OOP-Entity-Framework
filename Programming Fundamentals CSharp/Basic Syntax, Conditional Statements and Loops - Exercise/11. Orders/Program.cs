@@ -21,7 +21,7 @@ namespace _11._Orders
                 int capsules = int.Parse(Console.ReadLine());
                 double orderSum = pricePerCapsule * days * capsules;
                 Console.WriteLine($"The price for the coffee is: ${orderSum:F2}");
-                totalSum += orderSum;
+                totalSum += orderSum;  
             }
 
             Console.WriteLine($"Total: ${totalSum:f2}");
