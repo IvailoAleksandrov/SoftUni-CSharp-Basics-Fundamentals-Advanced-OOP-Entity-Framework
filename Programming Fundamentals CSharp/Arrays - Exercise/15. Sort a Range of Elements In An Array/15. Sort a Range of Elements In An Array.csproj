@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_15._Sort_a_Range_of_Elements_In_An_Array</RootNamespace>
+  </PropertyGroup>
+
+</Project>
