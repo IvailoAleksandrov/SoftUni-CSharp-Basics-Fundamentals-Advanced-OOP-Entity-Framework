@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_05._Extract_Special_Bytes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\Ivailo\source\repos\Streams, Files and Directories - Lab\05. Split Merge Binary Files\06. Split Merge Binary Files.csproj" Link="06. Split Merge Binary Files.csproj" />
+  </ItemGroup>
+
+</Project>

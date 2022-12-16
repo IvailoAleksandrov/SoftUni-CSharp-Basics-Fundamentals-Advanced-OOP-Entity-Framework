@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Odd Lines", "01. Odd Lines\01. Odd Lines.csproj", "{F1F439F6-BBD5-493B-9893-7595D61E78D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Odd lines 02", "01. Odd lines 02\01. Odd lines 02.csproj", "{415A5854-654D-4FBC-8A13-917617384F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Line Numbers", "02. Line Numbers\02. Line Numbers.csproj", "{E1B26B18-2F24-455E-B3EB-220941714DF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Word Count", "03. Word Count\03. Word Count.csproj", "{6349C353-6752-49B7-B193-6CF07BC18E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Merge Text Files", "04. Merge Text Files\04. Merge Text Files.csproj", "{979A6590-FCB4-4822-A420-5FF432E3ABDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Split Merge Binary Files", "05. Extract Special Bytes\06. Split Merge Binary Files.csproj", "{C6D8A02A-7D78-424B-8F74-C34C0AA9CF89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1F439F6-BBD5-493B-9893-7595D61E78D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F439F6-BBD5-493B-9893-7595D61E78D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F439F6-BBD5-493B-9893-7595D61E78D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F439F6-BBD5-493B-9893-7595D61E78D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415A5854-654D-4FBC-8A13-917617384F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415A5854-654D-4FBC-8A13-917617384F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415A5854-654D-4FBC-8A13-917617384F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415A5854-654D-4FBC-8A13-917617384F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B26B18-2F24-455E-B3EB-220941714DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B26B18-2F24-455E-B3EB-220941714DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B26B18-2F24-455E-B3EB-220941714DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B26B18-2F24-455E-B3EB-220941714DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6349C353-6752-49B7-B193-6CF07BC18E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6349C353-6752-49B7-B193-6CF07BC18E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6349C353-6752-49B7-B193-6CF07BC18E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6349C353-6752-49B7-B193-6CF07BC18E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979A6590-FCB4-4822-A420-5FF432E3ABDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979A6590-FCB4-4822-A420-5FF432E3ABDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979A6590-FCB4-4822-A420-5FF432E3ABDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979A6590-FCB4-4822-A420-5FF432E3ABDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D8A02A-7D78-424B-8F74-C34C0AA9CF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D8A02A-7D78-424B-8F74-C34C0AA9CF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D8A02A-7D78-424B-8F74-C34C0AA9CF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D8A02A-7D78-424B-8F74-C34C0AA9CF89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFE96AB9-1D42-4898-8834-C118DA110CF7}
+	EndGlobalSection
+EndGlobal
