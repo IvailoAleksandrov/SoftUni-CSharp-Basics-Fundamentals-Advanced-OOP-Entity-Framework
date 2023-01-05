@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDoublyLinkedList", "CustomDoublyLinkedList\CustomDoublyLinkedList.csproj", "{53525AC5-1DF6-4FBD-BDF3-72C8495B4485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomListImplementation", "CustomListImplementation\CustomListImplementation.csproj", "{AD1397ED-8F81-47F9-ABD3-1E9F989B2BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53525AC5-1DF6-4FBD-BDF3-72C8495B4485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53525AC5-1DF6-4FBD-BDF3-72C8495B4485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53525AC5-1DF6-4FBD-BDF3-72C8495B4485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53525AC5-1DF6-4FBD-BDF3-72C8495B4485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1397ED-8F81-47F9-ABD3-1E9F989B2BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1397ED-8F81-47F9-ABD3-1E9F989B2BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1397ED-8F81-47F9-ABD3-1E9F989B2BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1397ED-8F81-47F9-ABD3-1E9F989B2BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {466A7579-2D9F-4C89-A6BC-6F6543C38769}
+	EndGlobalSection
+EndGlobal
