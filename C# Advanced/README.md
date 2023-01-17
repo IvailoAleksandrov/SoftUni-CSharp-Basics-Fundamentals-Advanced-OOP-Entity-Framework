@@ -1,6 +1,6 @@
 # C# Advanced Module
 
-This folder contains various task solutions for the **`C# Advanced`** and **`C# OOP`** Courses at **[Software University](https://softuni.bg/)**.
+This folder contains various task solutions for the **`C# Advanced`**  Course at **[Software University](https://softuni.bg/)**.
 
 # C# Advanced
 
