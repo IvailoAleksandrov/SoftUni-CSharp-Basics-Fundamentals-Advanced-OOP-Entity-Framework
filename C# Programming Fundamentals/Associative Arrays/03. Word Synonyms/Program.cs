@@ -17,12 +17,13 @@ namespace _03._Word_Synonyms
 
                 if (!words.ContainsKey(word))
                 {
-                    words.Add(word, new List<string>() { synonym });
+                    words.Add(word, new List<string>() {synonym});
 
                 }
                 else
                 {
                     words[word].Add(synonym);
+                    
                 }
             }
             foreach (var word in words)
