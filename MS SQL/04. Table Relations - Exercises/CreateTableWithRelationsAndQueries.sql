@@ -84,17 +84,97 @@ INSERT INTO StudentExams VALUES
 --- TASK 4 --------- SELF-REFERENCING ---------------------------
 CREATE TABLE Teachers (
             TeacherID INT PRIMARY KEY IDENTITY(101,1)
-			,[Name] NVARCHAR NOT NULL
+			,[Name] NVARCHAR(30) NOT NULL
 			,ManagerID INT FOREIGN KEY REFERENCES Teachers(TeacherID)
 			)
-ALTER TABLE Teachers
-[Name] NVARCHAR(50)
-
 
 INSERT INTO Teachers VALUES
-			 ('John', 101)
-			,('Maya', 105)
+			 ('John', NULL)
+			,('Maya', 106)
 			,('Silvia', 106)
-			,('Ted', 104)
+			,('Ted', 105)
 			,('Mark', 101)
 			,('Greta', 101)
+--- TASK 6 --------- UNIVERSITY DATABASE ------------------------
+CREATE DATABASE UniversityDB 
+
+USE UniversityDB
+
+CREATE TABLE Majors (
+            MajorsID INT PRIMARY KEY IDENTITY
+			,[Name] NVARCHAR(50) NOT NULL
+			)
+CREATE TABLE Students (
+			StudentID INT PRIMARY KEY IDENTITY
+			,StudentNumber NVARCHAR(50) NOT NULL
+			,StudentName NVARCHAR(50) NOT NULL
+			,MajorID INT FOREIGN KEY REFERENCES Majors(MajorsID) NOT NULL
+			)
+
+CREATE TABLE Payments (
+            PaymentsID INT PRIMARY KEY IDENTITY
+			,PaymentDate DATETIME2 NOT NULL
+			,PaymentAmount DECIMAL(8,2) NOT NULL
+			,StudentID INT FOREIGN KEY REFERENCES Students(StudentID) NOT NULL
+			)
+CREATE TABLE Subjects (
+            SubjectID INT PRIMARY KEY IDENTITY
+			,SubjectName VARCHAR(50) NOT NULL
+			)
+CREATE TABLE Agenda (
+            StudentID INT FOREIGN KEY REFERENCES Students(StudentID) NOT NULL
+			,SubjectID INT FOREIGN KEY REFERENCES Subjects(SubjectID) NOT NULL
+			PRIMARY KEY (StudentID,SubjectID)
+			)
+--- TASK 9 --------- PEAKS IN RILA ------------------------------
+
+--- TASK 5 --------- ONLINE STORE DATABASE ----------------------
+CREATE DATABASE OnlineStoreDB
+GO
+
+USE OnlineStoreDB
+GO
+
+CREATE TABLE Cities (
+			 CityID INT CONSTRAINT PK_Cities PRIMARY KEY IDENTITY NOT NULL
+			,[Name] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE Customers (
+			 CustomerID INT CONSTRAINT PK_Customers PRIMARY KEY IDENTITY NOT NULL
+			,[Name] VARCHAR(50) NOT NULL
+			,Birthday DATE NOT NULL
+			,CityID INT CONSTRAINT FK_Customers_Cities FOREIGN KEY REFERENCES Cities(CityID) NOT NULL
+)
+
+CREATE TABLE Orders (
+     OrderID INT CONSTRAINT PK_Orders PRIMARY KEY IDENTITY NOT NULL
+	,CustomerID INT CONSTRAINT FK_Orders_Customers FOREIGN KEY REFERENCES Customers(CustomerID) NOT NULL
+)
+
+CREATE TABLE ItemTypes (
+			 ItemTypeID INT CONSTRAINT PK_ItemTypes PRIMARY KEY IDENTITY NOT NULL
+			,[Name] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE Items (
+			 ItemID INT CONSTRAINT PK_Items PRIMARY KEY IDENTITY NOT NULL
+			,[Name] VARCHAR(50) NOT NULL
+			,ItemTypeID INT CONSTRAINT FK_Items_ItemTypes FOREIGN KEY REFERENCES ItemTypes(ItemTypeID) NOT NULL
+)
+
+CREATE TABLE OrderItems (
+			 OrderID INT CONSTRAINT FK_OrderItems_Orders FOREIGN KEY REFERENCES Orders(OrderID) NOT NULL
+			,ItemID INT CONSTRAINT FK_OrderItems_Items FOREIGN KEY REFERENCES Items(ItemID) NOT NULL
+			,CONSTRAINT PK_OrderItems PRIMARY KEY(OrderID, ItemID)
+)
+
+USE Geography
+
+SELECT  m.MountainRange
+		,p.PeakName
+		,p.Elevation
+FROM Mountains AS m
+JOIN Peaks AS p ON m.Id = p.MountainId
+WHERE m.MountainRange = 'Rila'
+ORDER BY p.Elevation DESC
