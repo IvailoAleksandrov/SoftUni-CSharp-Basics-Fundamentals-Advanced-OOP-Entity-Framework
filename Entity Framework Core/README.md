@@ -22,3 +22,5 @@ Using the Database First approach.
 Retrieve data using LINQ queries.
 Working with a database using an ORM.
 Work with different data formats - XML, JSON
+
+This folder contains various task solutions for the **`Entity Framework Core`**  Course at **[Software University](https://softuni.bg/)**.

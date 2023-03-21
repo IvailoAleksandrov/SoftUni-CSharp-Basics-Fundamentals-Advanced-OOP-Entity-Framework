@@ -18,16 +18,16 @@ It gives basic knowledge of working with **`ACID`** transactions and transaction
 
 Acquired skills
 
-     Using procedures and functions
-     Fundamental knowledge of databases
-     Transaction management
-     Handling and storing data
-     Creation of basic Back-End architectures
-     Using the ACID model
+-  Using procedures and functions
+-  Fundamental knowledge of databases
+-  Transaction management
+-  Handling and storing data
+-  Creation of basic Back-End architectures
+-  Using the ACID model
 
 
 
-This folder contains various task solutions for the **`Database - MS SQL Server`**  Courses at **[Software University](https://softuni.bg/)**.
+This folder contains various task solutions for the **`Database - MS SQL Server`**  Course at **[Software University](https://softuni.bg/)**.
 
 
 
