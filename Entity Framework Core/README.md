@@ -14,9 +14,9 @@ Entity Framework Core
 -  NoSQL
 
 
-Building a database architecture
-Using the Code First approach
-Using the Database First approach
-Retrieve data using LINQ queries
-Working with a database using an ORM
-Work with different data formats - XML, JSON
+Building a database architecture.
+Using the Code First approach.
+Using the Database First approach.
+Retrieve data using LINQ queries.
+Working with a database using an ORM.
+Work with different data formats - XML, JSON.
